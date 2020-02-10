@@ -3,3 +3,7 @@
   height: 100%;
   position: absolute;
 }
+
+main {
+  padding: 1rem 0;
+}

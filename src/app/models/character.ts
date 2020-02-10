@@ -1,12 +1,14 @@
+import { LocationRef } from './location-ref';
+
 export class Character {
-  id: string;
+  id: number;
   name: string;
   status: string;
   species: string;
   type: string;
   gender: string;
-  origin: object;
-  location: object;
+  origin: LocationRef;
+  location: LocationRef;
   image: string;
   episodes: string[];
   url: string;

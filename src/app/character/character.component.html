@@ -1,0 +1,46 @@
+<div class="character-card">
+  <div class="character-image border shadow-sm rounded">
+    <img src="{{character.image}}" alt="not found" width="250" height="250">
+    
+    <div class="character-description">
+      <h3>{{character.name}}</h3>
+
+      <span>id: {{character.id}} - created {{createdDate}}</span>
+    </div>
+
+    <ng-container *ngIf="character.status">
+      <div class="character-detail">
+        <span>Status</span>
+        <span class="character-property text-success">{{character.status}}</span>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="character.species">
+      <div class="character-detail">
+        <span>Species</span>
+        <span class="character-property text-success">{{character.species}}</span>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="character.gender">
+      <div class="character-detail">
+        <span>Gender</span>
+        <span class="character-property text-success">{{character.gender}}</span>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="character.origin">
+      <div class="character-detail">
+        <span>Origin</span>
+        <span class="character-property text-success">{{character.origin.name}}</span>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="character.origin">
+      <div class="character-detail">
+        <span>Area</span>
+        <span class="character-property text-success">{{character.location.name}}</span>
+      </div>
+    </ng-container>
+  </div>
+</div>

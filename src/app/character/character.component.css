@@ -1,0 +1,29 @@
+.character-card {
+  width: 252px;
+  background-color: #444;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.character-image {
+  height: auto;
+}
+
+.character-description {
+  padding: .5rem;
+  background-color: grey;
+  opacity: .8;
+}
+
+.character-detail {
+  width: 100%;
+  padding: .5rem;
+  display: inline-block;
+  border-bottom: 1px #f8f9fa solid;
+}
+
+.character-property {
+  float: right;
+}

@@ -1,1 +1,6 @@
-<h1>Character component</h1>
+<div class="characters-container">
+  <ng-container *ngFor="let character of characters.results">
+    <app-character [character]="character"></app-character>
+  </ng-container>
+</div>
+

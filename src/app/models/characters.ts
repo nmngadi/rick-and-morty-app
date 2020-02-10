@@ -1,11 +1,11 @@
 import { Character } from './character';
 
 export class Characters {
-  info: Info;
+  info: CharacterInfo;
   results: Character[];
 }
 
-class Info {
+export class CharacterInfo {
   count: number;
   pages: number;
   next: string;

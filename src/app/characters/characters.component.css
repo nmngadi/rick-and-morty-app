@@ -1,0 +1,25 @@
+.characters-container {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-row-gap: .5rem;
+}
+
+@media screen and (min-width: 610px) and (max-width: 776px) {
+  .characters-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: .3fr .3fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 777px) {
+  .characters-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: .3fr .3fr .3fr;
+    grid-column-gap: .3rem;
+  }
+}
