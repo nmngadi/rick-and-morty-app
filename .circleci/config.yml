@@ -2,7 +2,7 @@ jobs:
   test:
     working_directory: ~/rick-and-morty-app
     docker:
-      - image: cirleci/node:12.9.1-browsers
+      - image: circleci/node:12.9.1-browsers
     steps:
       - restore_cache:
           keys:
