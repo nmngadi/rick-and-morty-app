@@ -1,0 +1,25 @@
+version: 2
+
+jobs:
+  working_directory: ~/rick-and-morty-app
+  docker:
+    - image: cirleci/node:12.9.1-browsers
+
+  steps:
+    - restore_cache:
+        keys:
+          - v1-dependencies-{{ checksum "package-lock.json" }}
+          - v1-dependencies-
+    - run
+        name: Install dependencies
+        command: npm install
+    - save_cache:
+        key: v1-dependencies-{{ checksum "package-lock.json" }}
+        paths:
+          - node_modules
+    - run
+        name: Linting
+        command: npm run lint
+    - run
+        name: Testing
+        command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
