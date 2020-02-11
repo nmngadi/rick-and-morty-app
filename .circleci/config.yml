@@ -10,16 +10,16 @@ jobs:
         keys:
           - v1-dependencies-{{ checksum "package-lock.json" }}
           - v1-dependencies-
-    - run
+    - run:
         name: Install dependencies
         command: npm install
     - save_cache:
         key: v1-dependencies-{{ checksum "package-lock.json" }}
         paths:
           - node_modules
-    - run
+    - run:
         name: Linting
         command: npm run lint
-    - run
+    - run:
         name: Testing
         command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
