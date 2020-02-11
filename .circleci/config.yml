@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: circleci/node:12.9.1-browsers
     steps:
+      - checkout
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package-lock.json" }}
