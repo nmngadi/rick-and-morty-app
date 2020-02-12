@@ -1,7 +1,3 @@
-dependencies:
-  pre:
-    - npm install angular-cli@9.0.1 -g
-
 jobs:
   build_test_deploy:
     working_directory: ~/rick-and-morty-app
@@ -26,6 +22,9 @@ jobs:
       - run:
           name: Testing
           command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - run:
+          name: Install Angular CLI
+          command: npm install angular-cli@9.0.1 -g
       - run:
           name: Build
           command: ng build --prod
