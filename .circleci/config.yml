@@ -23,11 +23,11 @@ jobs:
           name: Testing
           command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
       - run:
-        name: Build
-        command: ng build --prod
+          name: Build
+          command: ng build --prod
       - run:
-        name: Firebase Deploy
-        command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
+          name: Firebase Deploy
+          command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
 
 workflows:
   version: 2
