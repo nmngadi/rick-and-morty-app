@@ -23,11 +23,8 @@ jobs:
           name: Testing
           command: npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
       - run:
-          name: Install Angular CLI
-          command: sudo npm i @angular/cli@9.0.1 -g
-      - run:
           name: Build
-          command: ng build --prod
+          command: ./node_modules/@angular/cli/bin/ng build --prod
       - run:
           name: Firebase Deploy
           command: ./node_modules/.bin/firebase deploy --token "$FIREBASE_TOKEN"
