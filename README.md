@@ -3,9 +3,9 @@
 
 A simple Angular application used for web graduate projects.
 
-[![DVT](https://circleci.com/gh/DVT/rick-and-morty-app.svg?style=shield)](https://circleci.com/gh/DVT/rick-and-morty-app)
+[![CircleCI](https://circleci.com/gh/nmngadi/rick-and-morty-app/tree/enhancement%2Fci-cd-integration.svg?style=svg)](https://circleci.com/gh/nmngadi/rick-and-morty-app/tree/enhancement%2Fci-cd-integration)
 
-App URL: https://rick-and-morty-272ff.firebaseapp.com
+App URL: https://rmproject-76c19.firebaseapp.com
   
  
 # API
